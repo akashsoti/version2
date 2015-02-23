@@ -1,0 +1,119 @@
+*{
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'opensans';
+  src: font-url('fonts/Open_Sans/OpenSans-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+img{
+  max-width: 100%;
+}
+
+.hero-unit{
+  background: url("mobile-restaurant.png");
+  height: 761px;
+  background-position: 10% 10%;
+  background-size: cover;
+}
+.content{
+  width: 90%;
+  height: 661px;
+  //background: red;
+  margin: 0 auto;
+}
+
+.hero-unit__navigation{
+  // background: blue;
+  float: left;
+  width: 100%;
+  height: 100px;
+}
+
+.hero-unit__logo{
+  float: left;
+  width: 20%;
+  height: 60px;
+  margin: 20px 0 20px 0;
+  //background: red;
+  img{
+    padding: 6% 0 0 0;
+    background-repeat: no-repeat;
+  }
+}
+
+.hero-unit__navigation-links{
+  width: 60%;
+  height: 60px;
+  //background: green;
+  float: left;
+  margin: 20px 0 20px 0;
+  ul{
+    text-align: center;
+    margin: 20px 0 20px 0;
+    list-style-type: none;
+  }
+  li{
+    padding: 6% 0 0 0;
+    display: inline;
+    font-size: 1.2em;
+    margin-right: 4%;
+    a{
+      text-decoration: none;
+      color: white;
+      &:hover{
+        padding-bottom: 10px;
+        border-bottom: 1px solid white;
+      }
+    }
+  }
+}
+
+.hero-unit__login{
+  float: left;
+  width: 20%;
+  height: 60px;
+  // background: red;
+  margin: 20px 0 20px 0;
+}
+
+.hero-unit__hero-head{
+  margin-top: 100px;
+  float: left;
+  width: 100%;
+  // background: red;
+}
+.hero-unit__hero-head__title{
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  h1{
+    color: white;
+    font-size: 2.8em;
+  }
+  // background: green;
+}
+.hero-unit__hero-head__title-bullets{
+  width: 100%;
+  ul{
+    width: 80%;
+    text-align: center;
+    color: white;
+  }
+}
+.btn-primary{
+  margin-top: 10px;
+  float: right;
+  width: 110px;
+  height: 40px;
+  background: #4A90E2;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color: white;
+  padding-left:30px;
+  line-height: 40px;
+  font-size: 1.2em;
+}
