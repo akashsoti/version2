@@ -1,19 +1,32 @@
-*{
-  box-sizing: border-box;
+html{
+  font-size: 16px;
 }
 
-@font-face {
-  font-family: 'opensans';
-  src: font-url('fonts/Open_Sans/OpenSans-Regular.ttf');
-  font-weight: normal;
-  font-style: normal;
+*{
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+h1{
+  font-size: 4.5em;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  font-family: Proxima Nova, sans-serif;
+  font-size: 62.5%; /*1em=16px*/
 }
 
 img{
   max-width: 100%;
 }
 
-.hero-unit{
+$bright-orange: #FF7200;
+
+.hero-unit--overview{
+  width: 100%;
+  float: left;
   background: url("mobile-restaurant.png");
   height: 761px;
   background-position: 10% 10%;
@@ -21,7 +34,7 @@ img{
 }
 .content{
   width: 90%;
-  height: 661px;
+  height: 761px;
   //background: red;
   margin: 0 auto;
 }
@@ -54,12 +67,11 @@ img{
   ul{
     text-align: center;
     margin: 20px 0 20px 0;
-    list-style-type: none;
   }
   li{
     padding: 6% 0 0 0;
     display: inline;
-    font-size: 1.2em;
+    font-size: 1.9em;
     margin-right: 4%;
     a{
       text-decoration: none;
@@ -81,7 +93,7 @@ img{
 }
 
 .hero-unit__hero-head{
-  margin-top: 100px;
+  margin-top: 80px;
   float: left;
   width: 100%;
   // background: red;
@@ -92,18 +104,105 @@ img{
   text-align: center;
   h1{
     color: white;
-    font-size: 2.8em;
   }
   // background: green;
+  @media screen and (max-width: 1200px){
+    width: 54%;
+    text-align: left;
+    margin: 0;
+    h1{
+      display: inline-block;
+    }
+  }
 }
 .hero-unit__hero-head__title-bullets{
   width: 100%;
-  ul{
-    width: 80%;
-    text-align: center;
+  float: left;
+  text-align: center;
+  span{
+    display: inline;
     color: white;
+    font-style: italic;
+    margin-left:2%;
+    font-size: 2em;
+    &:before{
+      position: relative;
+      top: -4px;
+      right: 10px;
+      content: "";
+      display: inline-block;
+      width: 0.2em;
+      height: 0.2em;
+      border-radius: 50%;
+      background: white;
+    }
+  }
+  @media screen and (max-width: 1200px){
+    float: none;
+    text-align: left;
+    span{
+      display: inline;
+      font-size: 3em;
+      font-weight: 100;
+    }
   }
 }
+
+.hero-unit__form-container{
+  margin-top: 120px;
+  width: 100%;
+  height: 70px;
+  float: left;
+  @media screen and (max-width: 1200px){
+    float: none;
+    width: 44%;
+  }
+}
+
+.hero-unit__form-background{
+  margin: 0 auto;
+  width: 60%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  padding: 17.5px 1% 17.5px 1.6%;
+}
+
+.get-started{
+  float: left;
+  width: 100%;
+  height: 70px;
+  input[type=text-area], select{
+    float: left;
+    height: 35px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    padding-left: 1%;
+    border: none;
+    width: 24%;
+    margin-right: 0.75%;
+    font-size: 1.8em;
+    @media screen and (max-width: 1200px){
+      float: none;
+      width: 100%;
+    }
+  }
+}
+
+.btn-success{
+  float: left;
+  width: 24%;
+  height: 35px;
+  background: $bright-orange;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color: white;
+  line-height: 35px;
+  font-size: 1.8em;
+  text-align: center;
+}
+
 .btn-primary{
   margin-top: 10px;
   float: right;
@@ -113,7 +212,19 @@ img{
   -moz-border-radius: 5px;
   border-radius: 5px;
   color: white;
-  padding-left:30px;
   line-height: 40px;
-  font-size: 1.2em;
+  font-size: 1.8em;
+  text-align: center;
+}
+
+.feature-intro{
+  width: 100%;
+  height: 600px;
+  float: left;
+  background: $bright-orange;
+}
+
+.feature-intro__content{
+  height: 700px;
+  width: 0%;
 }
