@@ -97,6 +97,9 @@ $bright-orange: #FF7200;
   float: left;
   width: 100%;
   // background: red;
+  @media screen and (max-width: 800px){
+    margin-top: 40px;
+  }
 }
 .hero-unit__hero-head__title{
   width: 80%;
@@ -107,12 +110,7 @@ $bright-orange: #FF7200;
   }
   // background: green;
   @media screen and (max-width: 1200px){
-    width: 54%;
-    text-align: left;
-    margin: 0;
-    h1{
-      display: inline-block;
-    }
+
   }
 }
 .hero-unit__hero-head__title-bullets{
@@ -124,10 +122,10 @@ $bright-orange: #FF7200;
     color: white;
     font-style: italic;
     margin-left:2%;
-    font-size: 2em;
+    font-size: 2.2em;
     &:before{
       position: relative;
-      top: -4px;
+      top: -6px;
       right: 10px;
       content: "";
       display: inline-block;
@@ -138,13 +136,7 @@ $bright-orange: #FF7200;
     }
   }
   @media screen and (max-width: 1200px){
-    float: none;
-    text-align: left;
-    span{
-      display: inline;
-      font-size: 3em;
-      font-weight: 100;
-    }
+
   }
 }
 
@@ -153,20 +145,33 @@ $bright-orange: #FF7200;
   width: 100%;
   height: 70px;
   float: left;
-  @media screen and (max-width: 1200px){
-    float: none;
-    width: 44%;
+  @media screen and (max-width: 800px){
+    margin-top: 60px;
+    height: 200px;
+  }
+  @media screen and (max-width: 800px){
+    margin-top: 30px;
   }
 }
 
 .hero-unit__form-background{
   margin: 0 auto;
-  width: 60%;
-  height: 100%;
-  background: rgba(0,0,0,0.7);
+  width: 70%;
+  height: 70px;
+  background: rgba(0,0,0,0.4);
   border-radius: 3px;
   -webkit-border-radius: 3px;
   padding: 17.5px 1% 17.5px 1.6%;
+  @media screen and (max-width: 1200px){
+    width: 100%;
+  }
+  @media screen and (max-width: 800px){
+    width: 80%;
+    height: 200px;
+  }
+  @media screen and (min-width: 1400px){
+    width: 60%;
+  }
 }
 
 .get-started{
@@ -183,9 +188,10 @@ $bright-orange: #FF7200;
     width: 24%;
     margin-right: 0.75%;
     font-size: 1.8em;
-    @media screen and (max-width: 1200px){
+    @media screen and (max-width: 800px){
       float: none;
       width: 100%;
+      margin-bottom: 10px;
     }
   }
 }
@@ -201,6 +207,10 @@ $bright-orange: #FF7200;
   line-height: 35px;
   font-size: 1.8em;
   text-align: center;
+  @media screen and (max-width: 800px){
+    float: none;
+    width: 100%;
+  }
 }
 
 .btn-primary{
@@ -219,12 +229,20 @@ $bright-orange: #FF7200;
 
 .feature-intro{
   width: 100%;
-  height: 600px;
+  height: 800px;
   float: left;
   background: $bright-orange;
 }
 
 .feature-intro__content{
-  height: 700px;
-  width: 0%;
+
+}
+
+.pattern-orange{
+  width: 20%;
+  position: relative;
+  top: 0;
+  img{
+    width: 100%;
+  }
 }
