@@ -23,7 +23,7 @@ img{
 }
 
 $bright-orange: #FF7200;
-$feature-intro-height: 800px;
+$feature-intro-height: 706px;
 
 .hero-unit--overview{
   width: 100%;
@@ -278,6 +278,7 @@ $feature-intro-height: 800px;
   line-height: 35px;
   font-size: 1.8em;
   text-align: center;
+  cursor: pointer;
   @media screen and (max-width: 800px){
     float: none;
     width: 100%;
@@ -296,6 +297,7 @@ $feature-intro-height: 800px;
   line-height: 40px;
   font-size: 1.8em;
   text-align: center;
+  cursor: pointer;
 }
 
 .pattern-orange{
@@ -315,6 +317,25 @@ $feature-intro-height: 800px;
     width: 100%;
   }
 }
+.mac-iphone{
+  width: 45%;
+  position: absolute;
+  bottom: 0;
+  right: 0px;
+  display: inline;
+  img{
+    width: 100%;
+  }
+  @media screen and(min-width: 1800px){
+    width: 40%;
+    margin-top: 80px;
+  }
+
+  @media screen and(min-width: 2000px){
+    width: 35%;
+    margin-top: 80px;
+  }
+}
 
 .feature-intro{
   position: relative;
@@ -325,20 +346,94 @@ $feature-intro-height: 800px;
 }
 
 .feature-intro__content{
+  position: relative;
+  z-index: 1;
   margin: 0 auto;
   height: $feature-intro-height;
   width: 90%;
   // background: green;
 }
+.feature-intro__list{
+  position: relative;
+  width: 100%;
+}
+.icon-engage{
+  background: url("icon-engage.png");
+  background-repeat: no-repeat;
+}
+.icon-customer{
+  background: url("icon-customer.png");
+  background-repeat: no-repeat;
+}
+.icon-target{
+  background: url("icon-target.png");
+  background-repeat: no-repeat;
+}
+.icon-roi{
+  background: url("icon-roi.png");
+  background-repeat: no-repeat;
+}
 
+.feature-intro__points{
+  width: 50%;
+  float: left;
+  margin-left: 5%;
+  display: inline;
+  @media screen and (max-width: 1440px){
+    width: 40%;
+    margin-left: 0%;
+  }
+}
+.feature-intro__item{
+  width: 100%;
+  margin-bottom: 40px;
+  height: 100px;
+  span{
+    float: left;
+    height: 20px;
+    width: 60px;
+    padding: 20px;
+  }
+  p{
+    font-size: 2.2em;
+    width:90%;
+    font-weight: 100;
+    color: white;
+    display: inline;
+  }
+  @media screen and (max-width: 1660px){
+    height: 60px;
+    margin-bottom: 20px;
+  }
+}
+.col-left{
+  float: left;
+  width: 45%;
+  margin-right: 10%;
+  @media screen and (max-width: 1660px){
+    float: none;
+    margin-right: 0;
+    width: 100%;
+  }
+}
+.col-right{
+  float: right;
+  width: 45%;
+  @media screen and (max-width: 1660px){
+    float: none;
+    margin-right: 0;
+    width: 100%;
+  }
+}
 
 .intro-text{
   position: relative;
   width: 70%;
   margin: 0 auto;
-  height: 800px;
+  height: 300px;
   .intro-text__copy{
-    margin-top: 60px;
+    margin: 60px 0;
+
     float: left;
     text-align: center;
     p{
