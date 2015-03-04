@@ -326,11 +326,17 @@ $feature-intro-height: 706px;
   img{
     width: 100%;
   }
+  @media screen and(max-width: 1280px){
+    width: 50%;
+    margin-top: 80px;
+  }
   @media screen and(min-width: 1800px){
     width: 40%;
     margin-top: 80px;
   }
-
+  @media screen and(max-width: 1080px){
+    width: 90%;
+  }
   @media screen and(min-width: 2000px){
     width: 35%;
     margin-top: 80px;
@@ -343,6 +349,9 @@ $feature-intro-height: 706px;
   height: $feature-intro-height;
   float: left;
   background: $bright-orange;
+  @media screen and(max-width: 1080px){
+    height: $feature-intro-height + 600px;
+  }
 }
 
 .feature-intro__content{
@@ -379,9 +388,14 @@ $feature-intro-height: 706px;
   float: left;
   margin-left: 5%;
   display: inline;
-  @media screen and (max-width: 1440px){
-    width: 40%;
-    margin-left: 0%;
+  @media screen and (max-width: 1680px){
+    width: 50%;
+    margin-left: 0;
+  }
+  @media screen and(max-width: 1080px){
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
   }
 }
 .feature-intro__item{
@@ -400,6 +414,11 @@ $feature-intro-height: 706px;
     font-weight: 100;
     color: white;
     display: inline;
+  }
+  @media screen and (max-width: 1080px){
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
   }
   @media screen and (max-width: 1660px){
     height: 60px;
