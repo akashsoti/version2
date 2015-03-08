@@ -399,11 +399,13 @@ $feature-intro-height: 706px;
   }
 }
 .feature-intro__item{
+  position: relative;
   width: 100%;
   margin-bottom: 40px;
   height: 100px;
   span{
     float: left;
+    display: block;
     height: 20px;
     width: 60px;
     padding: 20px;
@@ -415,10 +417,13 @@ $feature-intro-height: 706px;
     color: white;
     display: inline;
   }
+
   @media screen and (max-width: 1080px){
-    text-align: center;
-    width: 70%;
+    width: 65%;
     margin: 0 auto;
+  }
+  @media screen and (max-width: 750px){
+    width: 100%;
   }
   @media screen and (max-width: 1660px){
     height: 60px;
@@ -461,4 +466,17 @@ $feature-intro-height: 706px;
       color: white;
     }
   }
+  @media screen and (max-width: 1080px){
+    width: 100%;
+  }
+}
+
+.navigation-mobile{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: red;
+}
+.mobile-menu-active{
+  display: visible;
 }
