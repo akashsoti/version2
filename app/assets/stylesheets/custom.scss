@@ -13,7 +13,9 @@ h1{
 h2{
   font-size: 3.5em;
 }
-
+h3{
+  font-size: 2.5em;
+}
 body{
   padding: 0;
   margin: 0;
@@ -24,10 +26,12 @@ body{
 img{
   max-width: 100%;
 }
-
+$body-text-color: #222222;
+$baby-blue: #4A90E2;
 $bright-orange: #FF7200;
 $feature-intro-height: 706px;
 $body-font-size: 2.2em;
+$featurette-block-height: 600px;
 
 .hero-unit--overview{
   width: 100%;
@@ -354,7 +358,10 @@ $body-font-size: 2.2em;
   float: left;
   background: $bright-orange;
   @media screen and(max-width: 1080px){
-    height: $feature-intro-height + 600px;
+    height: $feature-intro-height + 450px;
+  }
+  @media screen and(max-width: 1080px){
+    height: $feature-intro-height + 400px;
   }
 }
 
@@ -564,6 +571,71 @@ $body-font-size: 2.2em;
     cursor: pointer;
     a{
       color: #39485A;
+    }
+  }
+
+}
+
+.featurette{
+  position: relative;
+  float: left;
+  background: white;
+  display: block;
+  width: 100%;
+  height: $feature-intro-height+200px;;
+}
+.featurette-content{
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 155px;
+}
+.featurette-content__block{
+  width: 25%;
+  float: left;
+  margin-right: 12.5%;
+  height: $featurette-block-height;
+  text-align: center;
+  h3{
+    font-weight: 600;
+  }
+  p{
+    color: $body-text-color;
+    font-size: 1.8em;
+    font-weight: 100;
+  }
+}
+.featurette-content__block:last-child{
+  margin-right: 0;
+}
+.featurette-content__block__image{
+  width: 100%;
+  background-size: cover;
+  height: 250px;
+  background: red;
+}
+.featurette-content__block__text{
+  height: 300px;
+}
+.learn-more-btn-blue{
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  line-height: 37px;
+  width: 140px;
+  height: 38px;
+  text-align: center;
+  font-size: 1.6em;
+  border: 2px solid $baby-blue;
+  margin: 0 auto;
+  background: none;
+  & a{
+    text-decoration: none;
+    color: $baby-blue;
+  }
+  &:hover{
+    background-color: $baby-blue;
+    cursor: pointer;
+    a{
+      color: white;
     }
   }
 
