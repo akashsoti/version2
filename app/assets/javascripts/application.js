@@ -12,6 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require slick.min
+//= require carousel
 //= require turbolinks
 //= require side-menu
 //= require_tree .
