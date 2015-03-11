@@ -26,6 +26,15 @@ body{
 img{
   max-width: 100%;
 }
+
+footer{
+  background: #2B2B2B;
+  height: 450px;
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
 $body-text-color: #222222;
 $baby-blue: #4A90E2;
 $bright-orange: #FF7200;
@@ -668,22 +677,6 @@ $featurette-block-height: 614px;
   }
 }
 
-.carousel{
-  position: relative;
-  float: left;
-  background: black;
-  display: block;
-  width: 100%;
-  height: 413px;
-}
-.car1{
-  background: url("car1.jpg") no-repeat center center;
-  width: 100%;
-  height: 413px;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-}
 
 .credibility{
   position: relative;
@@ -691,7 +684,13 @@ $featurette-block-height: 614px;
   background: blue;
   display: block;
   width: 100%;
-  height: 252px;
+  height: 298px;
+  @media screen and (max-width: 1236px){
+    height: 386px;
+  }
+  @media screen and (max-width: 662px){
+    height: 529px;
+  }
 }
 .credibility__trust{
   display: block;
@@ -762,4 +761,49 @@ $featurette-block-height: 614px;
       margin-left: 10%;
     }
   }
+}
+
+.hero-unit--mission{
+  @extend .hero-unit--overview;
+  background: url("sfo.jpg") no-repeat center center;
+  background-size: cover;
+  .hero-unit__form-container p{
+    color: white;
+    font-size: $body-font-size;
+    text-align: center;
+  }
+}
+
+.footer__logo{
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+.hero-unit__navigation-links--footer{
+  @extend .hero-unit__navigation-links;
+  width: 100%;
+}
+.social-media{
+  position: relative;
+  float: left;
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+  a{
+    margin-right: 5%;
+  }
+  a:last-child{
+    margin-right: 0px;
+  }
+}
+
+.copyrights{
+  position: relative;
+  float: left;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  color: #5F5F5F;
+  margin-top: 60px;
+
 }
