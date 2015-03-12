@@ -9,6 +9,41 @@
 <body>
 
 <%= yield %>
+<footer>
+  <div class="footer__logo">
+    <%= image_tag("logo-footer.png") %>
+  </div>
+  <nav class="hero-unit__navigation-links--footer">
+    <ul>
+      <li>
+        <%= link_to "Overview", "#" %>
+      </li>
+      <li>
+        <%= link_to "How it works", "#" %>
+      </li>
+      <li>
+        <%= link_to "Customers", "#" %>
+      </li>
+      <li>
+        <%= link_to "Team", "application/team" %>
+      </li>
+      <li>
+        <%= link_to "Partners", "#" %>
+      </li>
+      <li>
+        <%= link_to "Press", "#" %>
+      </li>
+    </ul>
+  </nav>
+  <div class="social-media">
+    <%= link_to image_tag('icon-fb.png'), "#" %>
+    <%= link_to image_tag('icon-twitter.png'), "#" %>
+    <%= link_to image_tag('icon-g.png'), "#" %>
+  </div>
+  <div class="copyrights">
+    Made with &hearts; at Punchh, Inc. All rights reserved. &copy; <%=Date.today.year%>
+  </div>
 
+</footer>
 </body>
 </html>

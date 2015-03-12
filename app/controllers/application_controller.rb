@@ -6,4 +6,6 @@ class ApplicationController < ActionController::Base
   def overview
   end
 
+  def team
+  end
 end

@@ -1,0 +1,65 @@
+<section class="hero-unit--team">
+  <div class="content">
+
+    <%= render 'navigation' %>
+
+    <div class="hero-unit__hero-head">
+      <div class="hero-unit__hero-head__title">
+        <h1>Team</h1>
+        <p>We are a fun, hard working crew.  We are dedicated to our craft and your success.</p>
+      </div>
+
+      <div class="hero-unit__form-container">
+        <div class="hero-unit__form-background">
+          <form class="get-started">
+            <input type="text-area" name="some_name" value="" placeholder="Your store name"/>
+            <input type="text-area" name="some_name" value="" placeholder="Your email"/>
+            <select id="locations" name="">
+              <option selected>20-50 locations</option>
+              <option>50-100 locations</option>
+              <option>100+ locations</option>
+            </select>
+            <div class="btn-success">
+              Get Started
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="meet-the-team">
+  <div class="content">
+    <div class="team-intro">
+      <h2>Meet the Team</h2>
+    </div>
+    <div class="team-members">
+      <% team_members.each do |member| %>
+      <div class="team">
+        <div class="team__picture-container">
+          <%= image_tag(member[:picture]) %>
+        </div>
+        <div class="team__member-name"> <%= member[:name] %> </div>
+        <div class="team__member-title"> <%= member[:title] %> </div>
+        <div class="team__member-description"> <%= member[:description] %> </div>
+      </div>
+      <%end%>
+    </div>
+  </div>
+</section>
+
+<section class="hero-unit--team-footer">
+  <div class="content">
+    <div class="hero-unit__hero-head">
+      <div class="hero-unit__hero-head__title">
+        <h1>Work with us</h1>
+        <p>Here at Punchh, we value people who constantly ask questions, embrace their quirkiness,
+          and never stop trying to prove themselves wrong. We feel pretty lucky to be building products
+          qthat will change the way people interact online, and we’d love for you to join us!
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

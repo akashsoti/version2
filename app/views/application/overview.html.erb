@@ -23,42 +23,8 @@
 
 <section class="hero-unit--overview">
   <div class="content">
-    <div class="hero-unit__navigation">
 
-      <div class="hero-unit__logo">
-        <%= image_tag("logo.png") %>
-      </div>
-
-      <nav class="hero-unit__navigation-links">
-        <ul>
-          <li>
-            <%= link_to "Overview", "#" %>
-          </li>
-          <li>
-            <%= link_to "How it works", "#" %>
-          </li>
-          <li>
-            <%= link_to "Customers", "#" %>
-          </li>
-          <li>
-            <%= link_to "Team", "#" %>
-          </li>
-          <li>
-            <%= link_to "Partners", "#" %>
-          </li>
-          <li>
-            <%= link_to "Press", "#" %>
-          </li>
-        </ul>
-      </nav>
-
-      <div class="hero-unit__login">
-        <div class="btn-primary">
-          Login
-        </div>
-      </div>
-      <div class="burger-menu"><span></span></div>
-    </div>
+    <%= render 'navigation' %>
 
     <div class="hero-unit__hero-head">
       <div class="hero-unit__hero-head__title">
@@ -78,7 +44,6 @@
           </span>
         </div>
       </div>
-
 
       <div class="hero-unit__form-container">
         <div class="hero-unit__form-background">
@@ -229,7 +194,7 @@
   </div>
 </section>
 
-<section class="hero-unit--mission">
+<section class="hero-unit--team">
   <div class="content">
     <div class="hero-unit__hero-head">
       <div class="hero-unit__hero-head__title">
@@ -255,40 +220,3 @@
     </div>
   </div>
 </section>
-
-<footer>
-  <div class="footer__logo">
-    <%= image_tag("logo-footer.png") %>
-  </div>
-  <nav class="hero-unit__navigation-links--footer">
-    <ul>
-      <li>
-        <%= link_to "Overview", "#" %>
-      </li>
-      <li>
-        <%= link_to "How it works", "#" %>
-      </li>
-      <li>
-        <%= link_to "Customers", "#" %>
-      </li>
-      <li>
-        <%= link_to "Team", "#" %>
-      </li>
-      <li>
-        <%= link_to "Partners", "#" %>
-      </li>
-      <li>
-        <%= link_to "Press", "#" %>
-      </li>
-    </ul>
-  </nav>
-  <div class="social-media">
-    <%= link_to image_tag('icon-fb.png'), "#" %>
-    <%= link_to image_tag('icon-twitter.png'), "#" %>
-    <%= link_to image_tag('icon-g.png'), "#" %>
-  </div>
-  <div class="copyrights">
-    &copy; 2015 Punchh, Inc. All rights reserved.
-  </div>
-
-</footer>
