@@ -8,4 +8,8 @@ class ApplicationController < ActionController::Base
 
   def team
   end
+
+  def customers
+  end
+  
 end

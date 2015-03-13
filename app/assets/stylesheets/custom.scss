@@ -166,6 +166,10 @@ $featurette-block-height: 614px;
         padding-bottom: 10px;
         border-bottom: 1px solid white;
       }
+      &:active{
+        padding-bottom: 10px;
+        border-bottom: 1px solid white;
+      }
     }
   }
   @media screen and (max-width: 1200px){
@@ -886,4 +890,79 @@ $featurette-block-height: 614px;
   color: white;
   font-size: $body-font-size;
   text-align: center;
+}
+
+
+// Customers
+
+.hero-unit--customers{
+  @extend .hero-unit--overview;
+  background: url("restaurant.jpg") no-repeat center center;
+  background-size: cover;
+}
+.hero-unit--customers .hero-unit__hero-head__title p{
+  color: white;
+  font-size: 2.2em;
+  font-style: italic;
+}
+.customer-focus{
+  position: relative;
+  float: left;
+  height: 357px;
+  text-align: center;
+  width: 100%;
+  background: $bright-orange;
+  h3{
+    font-style: italic;
+    color: white;
+    margin-top: 141px;
+  }
+}
+.our-customers{
+  position: relative;
+  float: left;
+  width: 100%;
+}
+.customer-banner{
+  position: relative;
+  float: left;
+  background: $light-gray;
+  height: 436px;
+}
+.customer-banner__text{
+  float: left;
+  width: 50%;
+  margin-left: 5%;
+  margin-top: 60px;
+  h3{
+    color: white;
+  }
+  p{
+    font-size: $body-font-size;
+    color: white;
+  }
+}
+.schlotzskys-banner{
+  float: left;
+  background-size: cover;
+  background: url("schlotzskys.jpg") no-repeat center center;
+  width: 100%;
+}
+.capriottis-banner{
+  float: left;
+  background-size: cover;
+  background: url("capriottis.jpg") no-repeat center center;
+  width: 100%;
+}
+.royrogers-banner{
+  float: left;
+  background-size: cover;
+  background: url("royrogers.jpg") no-repeat 45% center;
+  width: 100%;
+}
+.right{
+  margin-left: 0;
+  margin-right: 5%;
+  text-align: right;
+  float: right;
 }
