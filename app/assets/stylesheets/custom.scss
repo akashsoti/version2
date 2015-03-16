@@ -1006,9 +1006,8 @@ ul#actions{
   background: white;
 }
 .testimonials{
-  margin-left: 10%;
-  margin-top: 100px;
-  float: left;
+  display: block;
+  margin: 100px auto;
   width: 80%;
   background: black;
 }
@@ -1069,4 +1068,13 @@ ul#actions{
     display: block;
     margin: 0 auto;
   }
+}
+
+
+// how it works
+
+.hero-unit--howitworks{
+  @extend .hero-unit--overview;
+  background: url("howitworks.jpg") no-repeat center center;
+  background-size: cover;
 }
