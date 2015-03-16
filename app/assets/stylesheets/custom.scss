@@ -188,6 +188,35 @@ $featurette-block-height: 614px;
   }
 }
 
+ul#actions{
+  display:none;
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  a{
+    color: white;
+    text-decoration: none;
+  }
+  li{
+    padding: 10px 10px 10px 20px;
+    &:hover{
+      background: #487EBE;
+      @include border-radius(5px);
+    }
+  }
+}
+.btn-primary:hover ul#actions{
+  display: block;
+  position: relative;
+  top: -26px;
+  right: 80px;
+  background: $baby-blue;
+  color: white;
+  width: 190px;
+  @include border-radius(5px);
+}
+
+
 .hero-unit__hero-head{
   margin-top: 80px;
   float: left;
