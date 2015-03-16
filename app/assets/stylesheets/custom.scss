@@ -941,6 +941,9 @@ $featurette-block-height: 614px;
     font-size: $body-font-size;
     color: white;
   }
+  @media screen and (max-width: 900px){
+    width: 90%;
+  }
 }
 .schlotzskys-banner{
   float: left;
@@ -965,4 +968,72 @@ $featurette-block-height: 614px;
   margin-right: 5%;
   text-align: right;
   float: right;
+}
+.customer-testimonials{
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 625px;
+  background: white;
+}
+.testimonials{
+  margin-left: 10%;
+  margin-top: 100px;
+  float: left;
+  width: 80%;
+  background: black;
+}
+.testimonial-block{
+  float: left;
+  background-size: cover;
+  width: 33.3333333333333%;
+  height: 420px;
+  .qoute{
+    display: none;
+  }
+  img{
+    display: block;
+    margin: 0 auto;
+    margin-top: 130px;
+  }
+  p{
+    display: none;
+  }
+  &:hover{
+    .qoute{
+      display: block;
+      margin: 0 auto;
+      margin-top: 60px;
+      background: url("qoute.png") no-repeat;
+      width: 29px;
+      height: 37px;
+    }
+    img{
+      display: none;
+    }
+    p{
+      display: block;
+      color: white;
+      font-size: 1.6em;
+      text-align: center;
+      padding: 10px;
+    }
+  }
+}
+
+.fb-boys{
+  background: #083b33;
+}
+.sf-soup{
+  background: #47992a;
+}
+.qsr{
+  background: #ed1d24;
+}
+
+.all-customers{
+  position: relative;
+  float: left;
+  width: 100%;
+  padding: 0 10% 10% 10%;
 }
