@@ -16,6 +16,12 @@ h2{
 h3{
   font-size: 2.5em;
 }
+p{
+  font-size: 2.2em;
+  line-height: 1.5em;
+  font-weight: 100;
+}
+
 body{
   padding: 0;
   margin: 0;
@@ -1077,4 +1083,154 @@ ul#actions{
   @extend .hero-unit--overview;
   background: url("howitworks.jpg") no-repeat center center;
   background-size: cover;
+}
+.reward-customers{
+  @extend .feature-intro;
+  height: 600px;
+  @media screen and (max-width: 1024px){
+    height: 911px;
+  }
+  .graphic{
+    float: left;
+    width: 40%;
+    img{
+      float: right;
+      margin-top: 60px;
+      width: 63%;
+    }
+    @media screen and (max-width: 1300px){
+      width: 45%;
+      float: right;
+      img{
+        width: 73%;
+      }
+    }
+    @media screen and (max-width: 1024px){
+      width: 83%;
+      margin: 0px auto;
+      float: left;
+      img{
+        width: 81%;
+        display: block;
+      }
+    }
+  }
+}
+.customer-banner__text--rewards{
+  @extend .customer-banner__text;
+  width: 40%;
+  @media screen and (max-width: 1024px){
+    width: 90%;
+  }
+}
+
+.word-of-mouth{
+  @extend .feature-intro;
+  height: 600px;
+  background: #f2f2f5;
+  @media screen and (max-width: 1024px){
+    height: 911px;
+  }
+  .graphic{
+    float: left;
+    width: 40%;
+    img{
+      float: right;
+      margin-top: 60px;
+      width: 63%;
+    }
+    @media screen and (max-width: 1300px){
+      width: 45%;
+      float: right;
+      img{
+        width: 73%;
+      }
+    }
+    @media screen and (max-width: 1024px){
+      width: 83%;
+      margin: 0px auto;
+      float: left;
+      img{
+        width: 81%;
+        display: block;
+      }
+    }
+  }
+}
+.customer-banner__text--publicity{
+  @extend .customer-banner__text;
+  width: 40%;
+  @media screen and (max-width: 1024px){
+    width: 90%;
+  }
+  h3, p{
+    text-align: right;
+    color: $charcoal;
+  }
+}
+
+
+.refer-customers{
+  @extend .feature-intro;
+  height: 600px;
+  background: white;
+  @media screen and (max-width: 1024px){
+    height: 1000px;
+  }
+  .graphic{
+    float: left;
+    width: 40%;
+    img{
+      float: right;
+      margin-top: 60px;
+      width: 63%;
+    }
+    @media screen and (max-width: 1300px){
+      width: 45%;
+      float: right;
+      img{
+        width: 73%;
+      }
+    }
+    @media screen and (max-width: 1024px){
+      width: 83%;
+      margin: 0px auto;
+      float: left;
+      img{
+        width: 81%;
+        display: block;
+      }
+    }
+  }
+}
+.customer-banner__text--refer{
+  @extend .customer-banner__text;
+  width: 40%;
+  @media screen and (max-width: 1024px){
+    width: 90%;
+  }
+  h3, p{
+    color: $charcoal;
+  }
+}
+
+.pos-banner{
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 478px;
+  background: url("pos-banner.jpg") no-repeat center center;
+  background-size: cover;
+}
+.pos-banner__text{
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
+  color: white;
+  padding-top: 121px;
+  padding-bottom: 75px;
+  @media screen and (max-width: 653px){
+    padding-top: 100px;
+  }
 }
