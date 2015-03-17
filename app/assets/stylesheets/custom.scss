@@ -211,7 +211,7 @@ ul#actions{
     }
   }
 }
-.btn-primary:hover ul#actions{
+.btn-primary:hover ul#actions, .btn-primary:focus ul#actions{
   display: block;
   position: relative;
   top: -26px;
@@ -870,7 +870,7 @@ ul#actions{
 }
 .team{
   float: left;
-  width: 23.334%;
+  width: 22.334%;
   height: 500px;
   margin: 0 5% 40px 5%;
   text-align: center;
@@ -1042,7 +1042,7 @@ ul#actions{
     opacity: 0;
     display: none;
   }
-  &:hover{
+  &:hover, &:focus{
     opacity: 1;
     .qoute{
       display: block;
@@ -1076,7 +1076,7 @@ ul#actions{
     margin-top: 130px;
   }
 
-  &:hover{
+  &:hover, &:focus{
     .qoute{
       display: block;
       opacity: 1;
