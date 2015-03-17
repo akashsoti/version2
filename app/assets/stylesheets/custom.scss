@@ -348,6 +348,9 @@ ul#actions{
     float: none;
     width: 100%;
   }
+  &:hover{
+    cursor: pointer;
+  }
 }
 
 .btn-primary{
@@ -1022,37 +1025,77 @@ ul#actions{
   background-size: cover;
   width: 33.3333333333333%;
   height: 420px;
-  .qoute{
-    display: none;
-  }
-  img{
-    display: block;
-    margin: 0 auto;
-    margin-top: 130px;
-  }
+  position:relative;
+}
+.quote-main{
+  float: left;
+  background-size: cover;
+  width: 90%;
+  height: 420px;
+  position:absolute;
+  top:0;
+  left:5%;
+  color:#FFF;
+  opacity:0;
+  transition:0.8s;
   p{
+    opacity: 0;
     display: none;
   }
   &:hover{
+    opacity: 1;
     .qoute{
       display: block;
+      opacity: 1;
       margin: 0 auto;
       margin-top: 60px;
       background: url("qoute.png") no-repeat;
       width: 29px;
       height: 37px;
     }
-    img{
-      display: none;
-    }
     p{
       display: block;
+      opacity: 1;
       color: white;
       font-size: 1.6em;
       text-align: center;
       padding: 10px;
     }
   }
+}
+
+.testimonial-block .testimonial-block__content{
+  display: block;
+  margin: 0 auto;
+  .qoute{
+    opacity: 0;
+  }
+  img{
+    display: block;
+    margin: 0 auto;
+    margin-top: 130px;
+  }
+
+  &:hover{
+    .qoute{
+      display: block;
+      opacity: 1;
+
+    }
+    img{
+      display: none;
+    }
+
+  }
+}
+
+.testimonial-block .testimonial-block__content img {
+  opacity:1;
+  transition:0.8s;
+}
+
+.testimonial-block:hover .testimonial-block__content img {
+  opacity:0;
 }
 
 .fb-boys{
@@ -1233,4 +1276,41 @@ ul#actions{
   @media screen and (max-width: 653px){
     padding-top: 100px;
   }
+}
+
+//partners
+
+
+.hero-unit--partners{
+  @extend .hero-unit--overview;
+  background: url("partners-bg.jpg") no-repeat center center;
+  background-size: cover;
+  p{
+    color: #fff;
+  }
+}
+.our-partners{
+  color: $charcoal;
+}
+.pos-system-partners{
+  position: relative;
+  float: left;
+  width: 100%;
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+.pos-system-partners__content{
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ordering-partners{
+  @extend .pos-system-partners;
+}
+.ordering-partners__content{
+  @extend .pos-system-partners__content;
+  float: left;
+  width: 40%;
+  margin-left: 7%;
 }

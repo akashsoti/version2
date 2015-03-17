@@ -1,0 +1,52 @@
+<section class="hero-unit--partners">
+  <div class="content">
+
+    <%= render 'navigation' %>
+
+    <div class="hero-unit__hero-head">
+      <div class="hero-unit__hero-head__title">
+        <h1>Partners</h1>
+        <p>Founded in 2010, Punch has a proven track record working with name brand restaurant chains ranging from 20 locations to several thousand  locations.  Our clients report Punchh generates same-store sales increases of 7% to 10% and we have an amazing 100%  renewal rate.</p>
+      </div>
+
+      <div class="hero-unit__form-container">
+        <div class="hero-unit__form-background">
+          <form class="get-started">
+            <input type="text-area" name="some_name" value="" placeholder="Your store name"/>
+            <input type="text-area" name="some_name" value="" placeholder="Your email"/>
+            <select id="locations" name="">
+              <option selected>20-50 locations</option>
+              <option>50-100 locations</option>
+              <option>100+ locations</option>
+            </select>
+            <div class="btn-success">
+              Get Started
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="our-partners">
+  <div class="pos-system-partners">
+    <div class="pos-system-partners__content">
+      <h3>POS Partners</h3>
+      <%= image_tag "partners-pos-icons.png" %>
+    </div>
+  </div>
+  <div class="ordering-partners">
+    <div class="ordering-partners__content">
+      <h3>Ordering Partners</h3>
+      <%= image_tag "ordering-partners-icons.png" %>
+    </div>
+    <div class="ordering-partners__content">
+      <h3>Payment Partners</h3>
+      <%= image_tag "payment-partners-icons.png" %>
+    </div>
+  </div>
+</section>
+
+<%= render 'mission' %>
